@@ -1,0 +1,811 @@
+{
+    "data": [
+        {
+            "param_12723": "8",
+            "avitoid": "3400446757",
+            "coords": {
+                "lat": "51.834809",
+                "lng": "107.584547"
+            },
+            "time_source_created": "2023-11-16 13:17:40",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "person_type": "\u0427\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e (\u0444\u0438\u043b\u044c\u0442\u0440)",
+            "source": "avito.ru",
+            "metro": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439",
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "url": "https://www.avito.ru/ulan-ude/kvartiry/1-k._kvartira_34m_35et._3400446757",
+            "cat1_id": 1,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "param_2315": "3",
+            "description": "\u0422\u0451\u043f\u043b\u0430\u044f \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u0430\u044f \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0430. \u0412 \u0437\u0430\u043b\u0435 \u0438\u043c\u0435\u0435\u0442\u0441\u044f 2 \u0434\u0438\u0432\u0430\u043d\u0430, \u043a\u0440\u0435\u0441\u043b\u043e,, \u0441\u0442\u043e\u043b, \u043f\u043e\u043b\u043a\u0438, \u0437\u0435\u0440\u043a\u0430\u043b\u043e, \u0421\u0430\u043d\u0443\u0437\u0435\u043b-\u0434\u0443\u0448\u0435\u0432\u0430\u044f \u043a\u0430\u0431\u0438\u043d\u0430, \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u0430, \u0443\u043d\u0438\u0442\u0430\u0437. \u0418\u0437 \u0431\u044b\u0442\u043e\u0432\u043e\u0439 \u0442\u0435\u0445\u043d\u0438\u043a\u0438 \u0442\u043e\u043b\u044c\u043a\u043e \u043f\u043b\u0438\u0442\u0430 \u0438 \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u0447\u0430\u0439\u043d\u0438\u043a. \u0414\u0432\u043e\u0440 \u0441\u043f\u043e\u043a\u043e\u0439\u043d\u044b\u0439, \u0414\u043b\u044f \u043d\u0435\u043f\u0440\u0438\u0442\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0445 \u043b\u044e\u0434\u0435\u0439. \u041b\u0443\u0447\u0448\u0435 \u043c\u0443\u0436\u0447\u0438\u043d\u0435. \u0426\u0435\u043d\u0430 13 \u0442. \u043f\u043b\u044e\u0441 13 \u0442. \u0437\u0430\u043b\u043e\u0433.",
+            "params2": {
+                "\u041e \u0434\u043e\u043c\u0435": {
+                    "\u0413\u043e\u0434 \u043f\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438": "2011",
+                    "\u041f\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043a\u0438\u0439 \u043b\u0438\u0444\u0442": "\u041d\u0435\u0442",
+                    "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043a\u0430": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f \u0432\u043e\u00a0\u0434\u0432\u043e\u0440\u0435",
+                    "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+                    "\u0413\u0440\u0443\u0437\u043e\u0432\u043e\u0439 \u043b\u0438\u0444\u0442": "\u041d\u0435\u0442"
+                },
+                "\u041e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435": {
+                    "\u0411\u0430\u043b\u043a\u043e\u043d \u0438\u043b\u0438 \u043b\u043e\u0434\u0436\u0438\u044f": "\u0411\u0430\u043b\u043a\u043e\u043d",
+                    "\u042d\u0442\u0430\u0436": "3 \u0438\u0437 5",
+                    "\u0422\u0435\u0445\u043d\u0438\u043a\u0430": "\u041f\u043b\u0438\u0442\u0430",
+                    "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "20 \u043c\u00b2",
+                    "\u0417\u0430\u043b\u043e\u0433, \u043c\u0435\u0441.": "1",
+                    "\u0421\u0430\u043d\u0443\u0437\u0435\u043b": "\u0421\u043e\u0432\u043c\u0435\u0449\u0451\u043d\u043d\u044b\u0439",
+                    "\u041e\u0431\u0449\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "34 \u043c\u00b2",
+                    "\u0420\u0435\u043c\u043e\u043d\u0442": "\u041a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+                    "\u0421\u0442\u0430\u0442\u0443\u0441": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430",
+                    "\u041c\u0435\u0431\u0435\u043b\u044c": "\u041a\u0443\u0445\u043d\u044f, \u0421\u043f\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430",
+                    "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "8 \u043c\u00b2",
+                    "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1"
+                }
+            },
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "price": 13000,
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "param_12724": "20",
+            "param_6862": "\u041d\u0435\u0442",
+            "contactname": "",
+            "phone_protected": 1,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "id": 622365001,
+            "time_source_updated": "2023-11-16 13:17:40",
+            "km_do_metro": 0,
+            "param_6866": "1",
+            "imagesLayout": [],
+            "param_2019": "1",
+            "person": "\u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e",
+            "address": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "param_2415": "5",
+            "cat2_id": 2,
+            "time": "2023-11-16 16:02:04",
+            "title": "1-\u043a. \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0430, 34 \u043c\u00b2, 3/5 \u044d\u0442.",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "images": [
+                {
+                    "imgurl": "https://40.img.avito.st/image/1/1.z9lTpLa5YzBlE-E9Qf-86koGYTbtBeEmZQhhMuERZzI.e4Vktla0gtceWnEyH0uSHGm5rrpUGw-FgaGSRu8k77M"
+                },
+                {
+                    "imgurl": "https://30.img.avito.st/image/1/1.eM3qA7a51CTctFYpllYL_vOh1iJUolYy3K_WJli20CY.V4581be8A3ilkXxdF5JtNEZ0BPkuToFnBMXXkTMMybk"
+                },
+                {
+                    "imgurl": "https://40.img.avito.st/image/1/1.xCG4xra5aMiOcerFvJ23EqFkas4GZ-rejmpqygpzbMo.FPuYDjbWJqjJl2tBB1I1PlE1FzsVShPlJ2enUB68D_E"
+                },
+                {
+                    "imgurl": "https://20.img.avito.st/image/1/1.2A3qA7a5dOTctPbp1lirPvOhduJUovby3K925li2cOY.C5HIz-PIoELRjYVZdktkNGR2E0ubAGNJU4XXdTreERI"
+                },
+                {
+                    "imgurl": "https://20.img.avito.st/image/1/1.3OXTaba5cAzl3vIB5zKv1srLcgptyPIa5cVyDmHcdA4.I-tsHviOgaPAwmERCaQ6qedWj3mp_e0ABNnk-djrDas"
+                },
+                {
+                    "imgurl": "https://00.img.avito.st/image/1/1.WLcWhba59F4gMnZTKtArhA8n9lioJHZIICn2XKQw8Fw.PTHgkPOFoFy3BYnKE4_uHmGWuA6QjMVriy_b4IcVLSo"
+                }
+            ],
+            "param_2515": "34",
+            "phone": "898363XXXXX",
+            "person_type_id": 3,
+            "nedvigimost_type_id": "2",
+            "source_id": 1,
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "8",
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u042d\u0442\u0430\u0436": "3",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "20",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": "1",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1",
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "34"
+            },
+            "count_ads_same_phone": 2
+        },
+        {
+            "url": "https://www.cian.ru/rent/flat/294532516",
+            "title": "1-\u043a \u043a\u0432. \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d \u041a\u043b\u044e\u0447\u0435\u0432\u0441\u043a\u0430\u044f \u0443\u043b., 6\u0414 (32.0 \u043c\u00b2)",
+            "price": 13800,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "time": "2023-11-16 05:12:24",
+            "phone": "891405XXXXX",
+            "person": "ID52449806",
+            "person_type": "\u0410\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "address": "\u041a\u043b\u044e\u0447\u0435\u0432\u0441\u043a\u0430\u044f \u0443\u043b., 6\u0414",
+            "description": "\u0417\u0432\u043e\u043d\u0438\u0442\u0435-\u0432 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043d\u0435 \u0437\u0430\u0445\u043e\u0436\u0443. \u0421\u0414\u0410\u042e  \u041f\u041e  2  \u041d\u0415\u0414\u0415\u041b\u0418 - 13800\u0420. \u0412\u0421\u0401 \u0412\u0425\u041e\u0414\u0418\u0422 \u0412 \u0421\u0422\u041e\u0418\u041c\u041e\u0421\u0422\u042c. \u0423\u042e\u0422\u041d\u0410\u042f 1'\u041a\u041e\u041c\u041d.\u041a\u0412\u0410\u0420\u0422\u0418\u0420\u0410. \u041f\u0420\u042f\u041c\u041e \u041d\u0410 \u041e\u0421\u0422\u0410\u041d\u041e\u0412\u041a\u0415 \u041b\u0435\u0431\u0435\u0434\u0435\u0432\u0430. \u0414\u0432\u0443\u0445\u0441\u043f\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0440\u043e\u0432\u0430\u0442\u044c,\u0448\u043a\u0430\u0444,\u0442\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440,\u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442, \u043f\u043e\u0441\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0431\u0435\u043b\u044c\u0451,\u043f\u043e\u043b\u043e\u0442\u0435\u043d\u0446\u0435. \u041d\u0430 \u043a\u0443\u0445\u043d\u0435-\u043f\u043e\u0441\u0443\u0434\u0430 , \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u0435\u0447\u044c, \u0447\u0430\u0439\u043d\u0438\u043a. \u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u0438 \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u044b \u0440\u044f\u0434\u043e\u043c.",
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "avitoid": 294532516,
+            "cat1_id": 1,
+            "cat2_id": 2,
+            "source": "cian.ru",
+            "phone_protected": 1,
+            "km_do_metro": 0,
+            "time_source_created": "2023-11-01 06:48:30",
+            "time_source_updated": "2023-11-16 05:38:18",
+            "id": 619947246,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "images": [
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-klyuchevskaya-ulica-2018677640-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-klyuchevskaya-ulica-2018673699-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-klyuchevskaya-ulica-2018677641-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-klyuchevskaya-ulica-2018675271-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-klyuchevskaya-ulica-2018677639-1.jpg"
+                }
+            ],
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "param_1945": 1,
+            "param_2019": 1,
+            "param_2515": "32.0",
+            "param_2315": 10,
+            "param_2415": 16,
+            "param_12723": "6.0",
+            "param_12724": "20.0",
+            "param_6862": "\u0415\u0441\u0442\u044c",
+            "param_6865": "100",
+            "param_6866": 4000,
+            "param_2078": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+            "coords": {
+                "lat": "51.819363",
+                "lng": "107.626121"
+            },
+            "person_type_id": 2,
+            "nedvigimost_type_id": 2,
+            "source_id": 4,
+            "contactname": "",
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": 1,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "32.0",
+                "\u042d\u0442\u0430\u0436": 10,
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": 16,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "6.0",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "20.0",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u0415\u0441\u0442\u044c",
+                "\u0420\u0430\u0437\u043c\u0435\u0440 \u043a\u043e\u043c\u0438\u0441\u0441\u0438\u0438": "100",
+                "\u0417\u0430\u043b\u043e\u0433": 4000,
+                "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439"
+            },
+            "count_ads_same_phone": 7
+        },
+        {
+            "url": "https://www.cian.ru/rent/flat/293975906",
+            "title": "1-\u043a \u043a\u0432. \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d \u0443\u043b. \u0421\u0430\u0445\u044c\u044f\u043d\u043e\u0432\u043e\u0439, 21\u0431\u043b\u043e\u043a2 (32.0 \u043c\u00b2)",
+            "price": 13800,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "time": "2023-11-15 10:06:38",
+            "phone": "891405XXXXX",
+            "person": "ID52449806",
+            "person_type": "\u0410\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "address": "\u0443\u043b. \u0421\u0430\u0445\u044c\u044f\u043d\u043e\u0432\u043e\u0439, 21\u0431\u043b\u043e\u043a2",
+            "description": "\u0417\u0432\u043e\u043d\u0438\u0442\u0435-\u0432 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f \u043d\u0435 \u0437\u0430\u0445\u043e\u0436\u0443. \n \u0421\u0414\u0410\u042e \u041f\u041e 2 \u041d\u0415\u0414\u0415\u041b\u0418    -13800\u0420.   \u0414\u043e\u043c \u043f\u0440\u044f\u043c\u043e \u043d\u0430 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435 \u0422\u0421\u041a. \u0420\u044f\u0434\u043e\u043c \u0412\u043e\u0435\u043d\u043d\u044b\u0439 \u0433\u043e\u0441\u043f\u0438\u0442\u0430\u043b\u044c. \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430\u043d\u0441\u043a\u0430\u044f \u0431\u043e\u043b\u044c\u043d\u0438\u0446\u0430. \u0421\u0430\u044f\u043d\u044b. \u0434\u0435\u0442\u0441\u043a\u0438\u0439 \u0414\u0438\u0430\u043c\u0435\u0434. \u0418\u043d\u0441\u0442\u0438\u0442\u0443\u0442 \u041a\u0443\u043b\u044c\u0442\u0443\u0440\u044b. \u0432 \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435-\u0434\u0432\u0443\u0441\u043f\u0430\u043b\u044c\u043d\u0430\u044f \u043a\u0440\u043e\u0432\u0430\u0442\u044c. \u0442\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440. \u043a\u0430\u0431\u0435\u043b\u044c\u043d\u043e\u0435. \u0438\u043d\u0442\u0435\u0440\u043d\u0435\u0442. \u043a\u0443\u0445\u043e\u043d\u043d\u044b\u0439 \u0433\u0430\u0440\u043d\u0438\u0442\u0443\u0440 \u0438 \u0443\u0433\u043e\u043b\u043e\u043a. \u044d\u043b\u0435\u043a\u0442\u0440\u043e\u043f\u043b\u0438\u0442\u0430. \u0447\u0430\u0439\u043d\u0438\u043a. \u0445\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a.",
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "avitoid": 293975906,
+            "cat1_id": 1,
+            "cat2_id": 2,
+            "source": "cian.ru",
+            "phone_protected": 1,
+            "km_do_metro": 0,
+            "time_source_created": "2023-10-18 11:33:40",
+            "time_source_updated": "2023-11-15 09:43:32",
+            "id": 618931401,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "images": [
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/2007593567-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/2007593566-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/2007593564-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/2007593569-1.jpg"
+                }
+            ],
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "param_1945": 1,
+            "param_2019": 1,
+            "param_2515": "32.0",
+            "param_2315": 2,
+            "param_2415": 7,
+            "param_12723": "4.0",
+            "param_12724": "18.0",
+            "param_6862": "\u0415\u0441\u0442\u044c",
+            "param_6865": "100",
+            "param_2078": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+            "coords": {
+                "lat": "51.808494",
+                "lng": "107.6241"
+            },
+            "person_type_id": 2,
+            "nedvigimost_type_id": 2,
+            "source_id": 4,
+            "contactname": "",
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": 1,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "32.0",
+                "\u042d\u0442\u0430\u0436": 2,
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": 7,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "4.0",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "18.0",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u0415\u0441\u0442\u044c",
+                "\u0420\u0430\u0437\u043c\u0435\u0440 \u043a\u043e\u043c\u0438\u0441\u0441\u0438\u0438": "100",
+                "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439"
+            },
+            "count_ads_same_phone": 7
+        },
+        {
+            "url": "https://www.cian.ru/rent/flat/294831270",
+            "title": "1-\u043a \u043a\u0432. \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d \u0443\u043b. \u0414\u0438\u0432\u0438\u0437\u0438\u043e\u043d\u043d\u0430\u044f 3-\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a, 740 (31.0 \u043c\u00b2)",
+            "price": 10000,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "time": "2023-11-13 23:03:24",
+            "phone": "898343XXXXX",
+            "person": "ID15734493",
+            "person_type": "\u0410\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "metro": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439",
+            "address": "\u0443\u043b. \u0414\u0438\u0432\u0438\u0437\u0438\u043e\u043d\u043d\u0430\u044f 3-\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a, 740",
+            "description": "\u0421\u0434\u0430\u044e \u043e\u0434\u043d\u043e\u043a\u043e\u043c\u043d\u0430\u0442\u043d\u0443\u044e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0443 \u043d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a. \u041e\u043a\u043d\u0430 \u0432\u044b\u0445\u043e\u0434\u044f\u0442 \u043d\u0430 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u0443\u044e \u0441\u0442\u043e\u0440\u043e\u043d\u0443. \u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430  \u0411\u0415\u0417 \u041c\u0415\u0411\u0415\u041b\u0418!!! \u0412\u044b \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0435  \u0441\u0432\u043e\u044e \u043c\u0435\u0431\u0435\u043b\u044c \u0438 \u0441\u0432\u043e\u044e \u043b\u044e\u0431\u0438\u043c\u0443\u044e \u043a\u0440\u043e\u0432\u0430\u0442\u044c!!!\n\u0410\u0440\u0435\u043d\u0434\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0430+ \u043a\u043e\u043c\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u043b\u0430\u0442\u0435\u0436\u0438 + \u043e\u043f\u043b\u0430\u0442\u0430 \u0432\u043e\u0434\u044b + \u043e\u043f\u043b\u0430\u0442\u0430 \u044d/\u044d\u043d\u0435\u0440\u0433\u0438\u0438.",
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "avitoid": 294831270,
+            "cat1_id": 1,
+            "cat2_id": 2,
+            "source": "cian.ru",
+            "phone_protected": 1,
+            "km_do_metro": 0,
+            "time_source_created": "2023-11-08 19:05:30",
+            "time_source_updated": "2023-11-13 22:46:58",
+            "id": 620748270,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "images": [
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2024825893-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2024825907-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2024825917-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2024825887-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2024818188-1.jpg"
+                }
+            ],
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "param_1945": 1,
+            "param_2019": 1,
+            "param_2515": "31.0",
+            "param_2315": 4,
+            "param_2415": 5,
+            "param_12723": 0,
+            "param_12724": 0,
+            "param_6862": "\u041d\u0435\u0442",
+            "param_6866": 5000,
+            "param_2078": "\u041f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0439",
+            "coords": {
+                "lat": "51.901053",
+                "lng": "107.53037"
+            },
+            "person_type_id": 2,
+            "nedvigimost_type_id": 2,
+            "source_id": 4,
+            "contactname": "",
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": 1,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "31.0",
+                "\u042d\u0442\u0430\u0436": 4,
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": 5,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": 0,
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": 0,
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": 5000,
+                "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0439"
+            },
+            "count_ads_same_phone": 1
+        },
+        {
+            "param_12723": "5",
+            "avitoid": "3608534186",
+            "coords": {
+                "lat": "51.80561066",
+                "lng": "107.6236343"
+            },
+            "time_source_created": "2023-11-11 15:34:04",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "person_type": "\u0427\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e (\u0444\u0438\u043b\u044c\u0442\u0440)",
+            "source": "avito.ru",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "url": "https://www.avito.ru/ulan-ude/kvartiry/1-k._kvartira_24m_35et._3608534186",
+            "cat1_id": 1,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "param_2315": "3",
+            "description": "\u0421\u0434\u0430\u043c, \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0443 \u0432 \u043c\u0430\u043b\u043e\u0441\u0435\u043c\u0435\u0439\u043a\u0435 \u043d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a. \u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u0442\u0435\u043f\u043b\u0430\u044f, \u0438\u0437 \u043c\u0435\u0431\u0435\u043b\u0438 \u0434\u0438\u0432\u0430\u043d, \u0441\u0442\u043e\u043b, \u0441\u0442\u0443\u043b\u044c\u044f, \u043a\u0440\u0435\u0441\u043b\u043e, \u043a\u0443\u0445\u043e\u043d\u043d\u044b\u0439 \u0448\u043a\u0430\u0444, \u0438\u043d\u0434\u0443\u043a\u0446\u0438\u043e\u043d\u043d\u0430\u044f \u043f\u043b\u0438\u0442\u043a\u0430. \u0423\u0434\u043e\u0431\u043d\u043e\u0435 \u043c\u0435\u0441\u0442\u043e\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u0440\u044f\u0434\u043e\u043c \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u0422\u0421\u041a. \n\u0410\u0440\u0435\u043d\u0434\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0430 10.000 \u0440\u0443\u0431+ \u043f\u043e \u0441\u0447\u0451\u0442\u0447\u0438\u043a\u0430\u043c \u0441\u0432\u0435\u0442 \u0438 \u0432\u043e\u0434\u0430.",
+            "params2": {
+                "\u041e \u0434\u043e\u043c\u0435": {
+                    "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0439",
+                    "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043a\u0430": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f \u0432\u043e\u00a0\u0434\u0432\u043e\u0440\u0435"
+                },
+                "\u041e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435": {
+                    "\u042d\u0442\u0430\u0436": "3 \u0438\u0437 5",
+                    "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "18 \u043c\u00b2",
+                    "\u0417\u0430\u043b\u043e\u0433, \u043c\u0435\u0441.": "1",
+                    "\u0421\u0430\u043d\u0443\u0437\u0435\u043b": "\u0421\u043e\u0432\u043c\u0435\u0449\u0451\u043d\u043d\u044b\u0439",
+                    "\u041e\u0431\u0449\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "24 \u043c\u00b2",
+                    "\u0420\u0435\u043c\u043e\u043d\u0442": "\u041a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+                    "\u0421\u0442\u0430\u0442\u0443\u0441": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430",
+                    "\u041c\u0435\u0431\u0435\u043b\u044c": "\u041a\u0443\u0445\u043d\u044f, \u0425\u0440\u0430\u043d\u0435\u043d\u0438\u0435 \u043e\u0434\u0435\u0436\u0434\u044b, \u0421\u043f\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430",
+                    "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "5 \u043c\u00b2",
+                    "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1"
+                }
+            },
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "price": 10000,
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "param_12724": "18",
+            "param_6862": "\u041d\u0435\u0442",
+            "contactname": "",
+            "phone_protected": 1,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "id": 621344566,
+            "time_source_updated": "2023-11-11 15:34:04",
+            "km_do_metro": 0,
+            "param_6866": "1",
+            "imagesLayout": [],
+            "param_2019": "1",
+            "person": "\u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e",
+            "address": "\u0443\u043b. \u0421\u0430\u0445\u044c\u044f\u043d\u043e\u0432\u043e\u0439, 19",
+            "param_2415": "5",
+            "cat2_id": 2,
+            "time": "2023-11-11 15:07:26",
+            "title": "1-\u043a. \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0430, 24 \u043c\u00b2, 3/5 \u044d\u0442.",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "images": [
+                {
+                    "imgurl": "https://50.img.avito.st/image/1/1.Z52zgba5y3SFNkl58dxYqqsjyXINIElihS3JdgE0z3Y.DoqRt9sHL3hQ4fpvA8cK4PbmYlsfe3Uwsrjpx-WYYDY"
+                },
+                {
+                    "imgurl": "https://70.img.avito.st/image/1/1.Df8_e7a5oRYJzCMbKScyyCfZoxCB2iMACdejFI3OpRQ.X9n2c1FayidnCBD_XwYlpySKUSTlVSC0fDr4pwwBwg4"
+                },
+                {
+                    "imgurl": "https://50.img.avito.st/image/1/1.0vgDOra5fhE1jfwcKwnvzxuYfBe9m_wHNZZ8E7GPehM.e8SJW401nfDBdZAcQmABG2Njgi6EeMckGgsjk8BoGtc"
+                },
+                {
+                    "imgurl": "https://50.img.avito.st/image/1/1.YlufsLa5zrKpB0y_1-1dbIcSzLQhEUykqRzMsC0FyrA.xulcpTxlgEG1q0LpeXHt0NQGF2cUxMlY6iZ1WA84xWY"
+                }
+            ],
+            "param_2515": "24",
+            "phone": "891483XXXXX",
+            "person_type_id": 3,
+            "nedvigimost_type_id": "2",
+            "source_id": 1,
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "5",
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u042d\u0442\u0430\u0436": "3",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "18",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": "1",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1",
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "24"
+            },
+            "count_ads_same_phone": 1
+        },
+        {
+            "url": "https://www.cian.ru/rent/flat/294797022",
+            "title": "1-\u043a \u043a\u0432. \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d \u0443\u043b. \u041f\u0430\u0432\u043b\u043e\u0432\u0430, 66 (13.0 \u043c\u00b2)",
+            "price": 12000,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "time": "2023-11-08 06:09:41",
+            "phone": "898345XXXXX",
+            "person": "\u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e",
+            "person_type": "\u0427\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e (\u0444\u0438\u043b\u044c\u0442\u0440)",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "address": "\u0443\u043b. \u041f\u0430\u0432\u043b\u043e\u0432\u0430, 66",
+            "description": "\u0423\u043b. \u041f\u0430\u0432\u043b\u043e\u0432\u0430, 66. \u041a\u043e\u043c\u043d\u0430\u0442\u0430 13 \u043c2, \u0441\u0435\u043a\u0446\u0438\u043e\u043d., \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u0430 \u0432 \u043a\u043e\u043c\u043d\u0430\u0442\u0435, \u043c\u0435\u0431\u0435\u043b\u044c, \u0441\u0442\u0438\u0440\u0430\u043b\u043a\u0430, \u0441\u0434\u0430\u0451\u0442\u0441\u044f \u043f\u043e \u0446\u0435\u043d\u0435 12 \u0442.\u0440. \u043f\u043b\u044e\u0441 \u0441\u0432\u0435\u0442 \u0432 \u043f\u0435\u0440\u0432\u044b\u0439 \u043c\u0435\u0441\u044f\u0446, \u0432 \u043f\u043e\u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0435 10 \u0442.\u0440. \u043f\u043b\u044e\u0441 \u0441\u0432\u0435\u0442.",
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "avitoid": 294797022,
+            "cat1_id": 1,
+            "cat2_id": 2,
+            "source": "cian.ru",
+            "phone_protected": 1,
+            "km_do_metro": 0,
+            "time_source_created": "2023-11-08 05:48:07",
+            "time_source_updated": "2023-11-08 05:48:10",
+            "id": 620626539,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "images": [
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-ulica-pavlova-2024185778-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-ulica-pavlova-2024185779-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-ulica-pavlova-2024185196-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-ulica-pavlova-2024185780-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-ulica-pavlova-2024185781-1.jpg"
+                }
+            ],
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "param_1945": 1,
+            "param_2019": 1,
+            "param_2515": "13.0",
+            "param_2315": 1,
+            "param_2415": 6,
+            "param_12723": 0,
+            "param_12724": 0,
+            "param_6862": "\u041d\u0435\u0442",
+            "param_2078": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+            "coords": {
+                "lat": "51.804886",
+                "lng": "107.62843"
+            },
+            "person_type_id": 3,
+            "nedvigimost_type_id": 2,
+            "source_id": 4,
+            "contactname": "",
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": 1,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "13.0",
+                "\u042d\u0442\u0430\u0436": 1,
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": 6,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": 0,
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": 0,
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439"
+            },
+            "count_ads_same_phone": 251
+        },
+        {
+            "param_12723": "8.5",
+            "avitoid": "3435645850",
+            "coords": {
+                "lat": "51.771549",
+                "lng": "107.588221"
+            },
+            "time_source_created": "2023-11-06 17:17:19",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "person_type": "\u0427\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e (\u0444\u0438\u043b\u044c\u0442\u0440)",
+            "source": "avito.ru",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "url": "https://www.avito.ru/ulan-ude/kvartiry/1-k._kvartira_295m_15et._3435645850",
+            "cat1_id": 1,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "param_2315": "1",
+            "description": "\u0412 \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435 \u0438\u043c\u0435\u0435\u0442\u0441\u044f \u0445\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a \u0438  \u0441\u0442\u043e\u043b. \u0414\u0440\u0443\u0433\u043e\u0439 \u043c\u0435\u0431\u0435\u043b\u0438 \u043d\u0435\u0442.\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430 \u0442\u0451\u043f\u043b\u0430\u044f \u0438 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u0430\u044f. \u0416\u0435\u043b\u0430\u0442\u0435\u043b\u044c\u043d\u043e \u0447\u0442\u043e\u0431\u044b \u0437\u0430\u0441\u0435\u043b\u0438\u043b\u0430\u0441\u044c \u0441\u0435\u043c\u0435\u0439\u043d\u0430\u044f \u043f\u0430\u0440\u0430.\n\u0417\u0432\u043e\u043d\u0438\u0442\u044c \u043f\u043e\u0441\u043b\u0435 15:00.",
+            "params2": {
+                "\u041e \u0434\u043e\u043c\u0435": {
+                    "\u0413\u043e\u0434 \u043f\u043e\u0441\u0442\u0440\u043e\u0439\u043a\u0438": "2011",
+                    "\u041f\u0430\u0441\u0441\u0430\u0436\u0438\u0440\u0441\u043a\u0438\u0439 \u043b\u0438\u0444\u0442": "\u041d\u0435\u0442",
+                    "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043a\u0430": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f \u0432\u043e\u00a0\u0434\u0432\u043e\u0440\u0435",
+                    "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+                    "\u0413\u0440\u0443\u0437\u043e\u0432\u043e\u0439 \u043b\u0438\u0444\u0442": "\u041d\u0435\u0442"
+                },
+                "\u041e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435": {
+                    "\u0411\u0430\u043b\u043a\u043e\u043d \u0438\u043b\u0438 \u043b\u043e\u0434\u0436\u0438\u044f": "\u0411\u0430\u043b\u043a\u043e\u043d",
+                    "\u042d\u0442\u0430\u0436": "1 \u0438\u0437 5",
+                    "\u0422\u0435\u0445\u043d\u0438\u043a\u0430": "\u0425\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a",
+                    "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "21 \u043c\u00b2",
+                    "\u0417\u0430\u043b\u043e\u0433, \u043c\u0435\u0441.": "1",
+                    "\u0421\u0430\u043d\u0443\u0437\u0435\u043b": "\u0421\u043e\u0432\u043c\u0435\u0449\u0451\u043d\u043d\u044b\u0439",
+                    "\u041e\u0431\u0449\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "29.5 \u043c\u00b2",
+                    "\u0420\u0435\u043c\u043e\u043d\u0442": "\u041a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+                    "\u0421\u0442\u0430\u0442\u0443\u0441": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430",
+                    "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "8.5 \u043c\u00b2",
+                    "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1"
+                }
+            },
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "price": 15000,
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "param_12724": "21",
+            "param_6862": "\u041d\u0435\u0442",
+            "contactname": "",
+            "phone_protected": 1,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "id": 620419165,
+            "time_source_updated": "2023-11-06 17:17:19",
+            "km_do_metro": 0,
+            "param_6866": "1",
+            "imagesLayout": [],
+            "param_2019": "1",
+            "person": "\u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e",
+            "address": "112-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 24",
+            "param_2415": "5",
+            "cat2_id": 2,
+            "time": "2023-11-06 16:50:16",
+            "title": "1-\u043a. \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0430, 29.5 \u043c\u00b2, 1/5 \u044d\u0442.",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "images": [
+                {
+                    "imgurl": "https://80.img.avito.st/image/1/1.RS_viba56cbZPmvL6bwIOfQr68BRKGvQ2SXrxF087cQ.s3T-UHtl0Ecfjci_1yqvwbcRXtW58BYcqvZYEhWPsME"
+                },
+                {
+                    "imgurl": "https://70.img.avito.st/image/1/1.TcFy-ra54ShETWMlZM8A12lY4y7MW2M-RFbjKsBP5So.qXtSboUycVmYIp2-2AriTh4dt1LSf-KURhWuBrAgeTE"
+                },
+                {
+                    "imgurl": "https://20.img.avito.st/image/1/1.g_rSCLa5LxPkv60e2D7O7MmqLRVsqa0F5KQtEWC9KxE.km0TQVleMW5kw3OJIRFxmkytxS_8OyY_yf6hXnmkLqQ"
+                },
+                {
+                    "imgurl": "https://90.img.avito.st/image/1/1.448dsra5T2YrBc1rV4WumQYQTWCjE81wKx5NZK8HS2Q.RiNAXwwBMN6v5pdDuuZwqM8DfJjZeKUkOnYFCM7QBoM"
+                },
+                {
+                    "imgurl": "https://50.img.avito.st/image/1/1.ps7uKLa5CifYn4gqrh7r2PWKCCFQiYgx2IQIJVydDiU.MlWQBWLmKOxDbOHbv17_2RCpIVwYJRRpFC2nQi4blXU"
+                },
+                {
+                    "imgurl": "https://50.img.avito.st/image/1/1.oL2Uara5DFSi3Y5Z2Fztq4_IDlIqy45CosYOVibfCFY.8-jI04Z-G0_niw6qr-kwR0OZ_jcGhEhWswqCRAwhgI8"
+                },
+                {
+                    "imgurl": "https://10.img.avito.st/image/1/1.jcFy-ra5IShETaMlZMzA12lYIy7MW6M-RFYjKsBPJSo.wODL7BQfXvjBueIuhMRGJY-mwHgc1lJXNuiHGHbM1Pk"
+                },
+                {
+                    "imgurl": "https://10.img.avito.st/image/1/1.js7uKLa5IifYn6Aq_h7D2PWKICFQiaAx2IQgJVydJiU.5ASE7cZEarrYHAVos8cYxtaCN6rLe6tgUHjlKblwCng"
+                }
+            ],
+            "param_2515": "29.5",
+            "phone": "891405XXXXX",
+            "person_type_id": 3,
+            "nedvigimost_type_id": "2",
+            "source_id": 1,
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "8.5",
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u042d\u0442\u0430\u0436": "1",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "21",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": "1",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1",
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "29.5"
+            },
+            "count_ads_same_phone": 3
+        },
+        {
+            "param_12723": "16",
+            "avitoid": "3481425653",
+            "coords": {
+                "lat": "51.767759",
+                "lng": "107.598121"
+            },
+            "time_source_created": "2023-11-06 15:49:31",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "person_type": "\u0427\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e (\u0444\u0438\u043b\u044c\u0442\u0440)",
+            "source": "avito.ru",
+            "metro": "\u041e\u043a\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0438\u0439",
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "url": "https://www.avito.ru/ulan-ude/kvartiry/1-k._kvartira_29m_35et._3481425653",
+            "cat1_id": 1,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "param_2315": "3",
+            "description": "\u0421\u0434\u0430\u043c 1-\u043a\u043e\u043c\u043d\u0430\u0442\u043d\u0443\u044e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0443 \u043f\u043b\u0430\u0442\u0435\u0436\u0435\u0441\u043f\u043e\u0441\u043e\u0431\u043d\u044b\u043c \u0438 \u043f\u043e\u0440\u044f\u0434\u043e\u0447\u043d\u044b\u043c \u043b\u044e\u0434\u044f\u043c. \u0412 \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435 \u0438\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u044f \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u0430\u044f \u043c\u0435\u0431\u0435\u043b\u044c, \u043f\u043e\u0441\u0443\u0434\u0430. \u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u0432 \u043f\u0435\u0448\u0435\u0439 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e\u0441\u0442\u0438. \u0417\u0430\u043b\u043e\u0433 \u0437\u0430 1 \u043c\u0435\u0441\u044f\u0446",
+            "params2": {
+                "\u041e \u0434\u043e\u043c\u0435": {
+                    "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u044b\u0439",
+                    "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                    "\u0413\u0440\u0443\u0437\u043e\u0432\u043e\u0439 \u043b\u0438\u0444\u0442": "\u041d\u0435\u0442",
+                    "\u041f\u0430\u0440\u043a\u043e\u0432\u043a\u0430": "\u041e\u0442\u043a\u0440\u044b\u0442\u0430\u044f \u0432\u043e\u00a0\u0434\u0432\u043e\u0440\u0435"
+                },
+                "\u041e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0435": {
+                    "\u0411\u0430\u043b\u043a\u043e\u043d \u0438\u043b\u0438 \u043b\u043e\u0434\u0436\u0438\u044f": "\u0411\u0430\u043b\u043a\u043e\u043d",
+                    "\u042d\u0442\u0430\u0436": "3 \u0438\u0437 5",
+                    "\u0422\u0435\u0445\u043d\u0438\u043a\u0430": "\u0425\u043e\u043b\u043e\u0434\u0438\u043b\u044c\u043d\u0438\u043a, \u041f\u043b\u0438\u0442\u0430, \u0421\u0442\u0438\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043c\u0430\u0448\u0438\u043d\u0430, \u0422\u0435\u043b\u0435\u0432\u0438\u0437\u043e\u0440",
+                    "\u0417\u0430\u043b\u043e\u0433, \u043c\u0435\u0441.": "1",
+                    "\u0421\u0430\u043d\u0443\u0437\u0435\u043b": "\u0421\u043e\u0432\u043c\u0435\u0449\u0451\u043d\u043d\u044b\u0439",
+                    "\u041e\u0431\u0449\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": "29 \u043c\u00b2",
+                    "\u0418\u043d\u0442\u0435\u0440\u043d\u0435\u0442 \u0438 \u0422\u0412": "\u0422\u0435\u043b\u0435\u0432\u0438\u0434\u0435\u043d\u0438\u0435",
+                    "\u0420\u0435\u043c\u043e\u043d\u0442": "\u041a\u043e\u0441\u043c\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+                    "\u0421\u0442\u0430\u0442\u0443\u0441": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u0430",
+                    "\u041c\u0435\u0431\u0435\u043b\u044c": "\u041a\u0443\u0445\u043d\u044f, \u0421\u043f\u0430\u043b\u044c\u043d\u044b\u0435 \u043c\u0435\u0441\u0442\u0430",
+                    "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "16 \u043c\u00b2",
+                    "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1"
+                }
+            },
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "price": 15000,
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "param_6862": "\u041d\u0435\u0442",
+            "contactname": "",
+            "phone_protected": 1,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "id": 620413857,
+            "time_source_updated": "2023-11-06 15:49:31",
+            "km_do_metro": 0,
+            "param_6866": "1",
+            "imagesLayout": [],
+            "param_2019": "1",
+            "person": "\u043d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e",
+            "address": "113-\u0439 \u043c\u0438\u043a\u0440\u043e\u0440\u0430\u0439\u043e\u043d, 25",
+            "param_2415": "5",
+            "cat2_id": 2,
+            "time": "2023-11-06 15:20:57",
+            "title": "1-\u043a. \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0430, 29 \u043c\u00b2, 3/5 \u044d\u0442.",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "images": [
+                {
+                    "imgurl": "https://10.img.avito.st/image/1/1.cRSh4ra53f2XVV_wz49nD7tA3_sfQ1_rl07f_xNX2f8.8-RcO4ZgM68q-rkMalswe7hk6hprwWg35PF4gNZ8QKs"
+                },
+                {
+                    "imgurl": "https://20.img.avito.st/image/1/1.y5Rzk7a5Z31FJOVwaeDdj2kxZXvNMuVrRT9lf8EmY38.YNgvtA14QHfOn2FQtrOLf6gkPA_eJnaWvnGsPJ0H3Po"
+                },
+                {
+                    "imgurl": "https://40.img.avito.st/image/1/1.ABQ6A7a5rP0MtC7wNh8WDyChrvuEoi7rDK-u_4i2qP8.qnJGSHdnZbqVkRI78tnH8CRgeRWQ6gIfwZPoMRTxr1A"
+                }
+            ],
+            "param_2515": "29",
+            "phone": "891498XXXXX",
+            "person_type_id": 3,
+            "nedvigimost_type_id": "2",
+            "source_id": 1,
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "16",
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u042d\u0442\u0430\u0436": "3",
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": "1",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": "1",
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": "5",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "29"
+            },
+            "count_ads_same_phone": 1
+        },
+        {
+            "url": "https://www.cian.ru/rent/flat/294618549",
+            "title": "1-\u043a \u043a\u0432. \u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d \u0443\u043b. \u0414\u0438\u0432\u0438\u0437\u0438\u043e\u043d\u043d\u0430\u044f 3-\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a, 740 (31.0 \u043c\u00b2)",
+            "price": 10000,
+            "price_metric": "\u20bd \u0432 \u043c\u0435\u0441\u044f\u0446",
+            "time": "2023-11-02 18:07:41",
+            "phone": "898343XXXXX",
+            "person": "ID15734493",
+            "person_type": "\u0410\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e",
+            "city": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f, \u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "metro": "\u0421\u043e\u0432\u0435\u0442\u0441\u043a\u0438\u0439",
+            "address": "\u0443\u043b. \u0414\u0438\u0432\u0438\u0437\u0438\u043e\u043d\u043d\u0430\u044f 3-\u0439 \u0443\u0447\u0430\u0441\u0442\u043e\u043a, 740",
+            "description": "\u0421\u0434\u0430\u044e \u043e\u0434\u043d\u043e\u043a\u043e\u043c\u043d\u0430\u0442\u043d\u0443\u044e \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0443 \u043d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a \u043e\u0442 \u0433\u043e\u0434\u0430. \u041e\u043a\u043d\u0430 \u0432\u044b\u0445\u043e\u0434\u044f\u0442 \u043d\u0430 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u0443\u044e \u0441\u0442\u043e\u0440\u043e\u043d\u0443. \u0411\u0415\u0417  \u041c\u0415\u0411\u0415\u041b\u0418!!! \u041e\u0431\u0441\u0442\u0430\u0432\u0438\u0442\u0435 \u043a\u0432\u0430\u0440\u0442\u0438\u0440\u0443 \u0441\u0432\u043e\u0435\u0439  \u043c\u0435\u0431\u0435\u043b\u044c\u044e \u0438 \u043b\u044e\u0431\u0438\u043c\u043e\u0439 \u043a\u0440\u043e\u0432\u0430\u0442\u044c\u044e! \u0410\u0440\u0435\u043d\u0434\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0430 + \u043a\u043e\u043c\u043c\u0443\u043d\u0430\u043b\u044c\u043d\u044b\u0435 \u043f\u043b\u0430\u0442\u0435\u0436\u0438+ \u0441\u0447\u0435\u0442\u0447\u0438\u043a\u0438.",
+            "nedvigimost_type": "\u0421\u0434\u0430\u043c",
+            "avitoid": 294618549,
+            "cat1_id": 1,
+            "cat2_id": 2,
+            "source": "cian.ru",
+            "phone_protected": 1,
+            "km_do_metro": 0,
+            "time_source_created": "2023-11-02 17:27:53",
+            "time_source_updated": "2023-11-02 17:32:05",
+            "id": 620123685,
+            "cat1": "\u041d\u0435\u0434\u0432\u0438\u0436\u0438\u043c\u043e\u0441\u0442\u044c",
+            "cat2": "\u041a\u0432\u0430\u0440\u0442\u0438\u0440\u044b",
+            "images": [
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2020390479-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2020390476-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2020390480-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2020382450-1.jpg"
+                },
+                {
+                    "imgurl": "https://cdn-p.cian.site/images/kvartira-ulanude-divizionnaya-3-y-uchastok-ulica-2020390092-1.jpg"
+                }
+            ],
+            "param_1943": "\u0421\u0434\u0430\u043c",
+            "param_2016": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+            "param_1945": 1,
+            "param_2019": 1,
+            "param_2515": "31.0",
+            "param_2315": 4,
+            "param_2415": 5,
+            "param_12723": "6.0",
+            "param_12724": 0,
+            "param_6862": "\u041d\u0435\u0442",
+            "param_6866": 5000,
+            "param_2078": "\u041f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0439",
+            "coords": {
+                "lat": "51.901053",
+                "lng": "107.53037"
+            },
+            "person_type_id": 2,
+            "nedvigimost_type_id": 2,
+            "source_id": 4,
+            "contactname": "",
+            "region": "\u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "city1": "\u0423\u043b\u0430\u043d-\u0423\u0434\u044d",
+            "phone_operator": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u0422\u0435\u043b\u0435\u0421\u0438\u0441\u0442\u0435\u043c\u044b",
+            "phone_region": "\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u0411\u0443\u0440\u044f\u0442\u0438\u044f",
+            "params": {
+                "\u0422\u0438\u043f \u043e\u0431\u044a\u044f\u0432\u043b\u0435\u043d\u0438\u044f": "\u0421\u0434\u0430\u043c",
+                "\u0421\u0440\u043e\u043a \u0430\u0440\u0435\u043d\u0434\u044b": "\u041d\u0430 \u0434\u043b\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0441\u0440\u043e\u043a",
+                "\u041a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043a\u043e\u043c\u043d\u0430\u0442": 1,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c": "31.0",
+                "\u042d\u0442\u0430\u0436": 4,
+                "\u042d\u0442\u0430\u0436\u0435\u0439 \u0432 \u0434\u043e\u043c\u0435": 5,
+                "\u041f\u043b\u043e\u0449\u0430\u0434\u044c \u043a\u0443\u0445\u043d\u0438": "6.0",
+                "\u0416\u0438\u043b\u0430\u044f \u043f\u043b\u043e\u0449\u0430\u0434\u044c": 0,
+                "\u041a\u043e\u043c\u0438\u0441\u0441\u0438\u044f": "\u041d\u0435\u0442",
+                "\u0417\u0430\u043b\u043e\u0433": 5000,
+                "\u0422\u0438\u043f \u0434\u043e\u043c\u0430": "\u041f\u0430\u043d\u0435\u043b\u044c\u043d\u044b\u0439"
+            },
+            "count_ads_same_phone": 1
+        }
+    ]
+}
