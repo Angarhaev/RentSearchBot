@@ -2,7 +2,7 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import CommandStart, StateFilter
 from aiogram.fsm.context import FSMContext
-from database.insert_entries import insert_new_entry
+from database.inserts import insert_new_entry
 from utils import texts
 from my_keyboards.__init__ import create_one
 from states.states import AlSettings

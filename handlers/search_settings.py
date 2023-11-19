@@ -7,6 +7,7 @@ from my_keyboards.__init__ import create_inline_keyboard, create_one
 from states.states import AlSettings
 from aiogram.exceptions import TelegramBadRequest
 import random
+from database.inserts import insert_settings
 
 
 router_search = Router()
@@ -127,7 +128,7 @@ async def high_filter(message: Message, state: FSMContext):
         await state.set_state(AlSettings.max_price)
 
 
-@router_search.message(StateFilter(AlSettings.amount_rooms))
+@router_search.message(StateFilter(AlSettings.swipe))
 async def no_write_pls_choice_rooms(message: Message, state: FSMContext):
     """Handler, срабатывающий при попытке ввести текст, вместо выбора количества комнат.
     Без сохранения результатов верхней границы (уже сохранено)"""
@@ -145,5 +146,11 @@ async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
     await callback.message.answer(f"Район города: {user_dict[callback.from_user.id]['district']}\n"
                                   f"Ценовой диапазон: {user_dict[callback.from_user.id]['low']}"
                                   f"-{user_dict[callback.from_user.id]['high']}\n"
-                                  f"Количество комнат: {user_dict[callback.from_user.id]['rooms']} ")
-    await state.set_state(None)
+                                  f"Количество комнат: {user_dict[callback.from_user.id]['rooms']}")
+    await insert_settings(callback.from_user.id, user_dict[callback.from_user.id]['district'], user_dict[callback.from_user.id]['rooms'],
+                          user_dict[callback.from_user.id]['low'], user_dict[callback.from_user.id]['high'])
+    await state.set_state(AlSettings.swipe)
+
+@router_search.callback_query(StateFilter(AlSettings.swipe))
+async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
+    pass
