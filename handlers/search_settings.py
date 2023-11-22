@@ -3,19 +3,22 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 from utils import texts
-from my_keyboards.__init__ import create_inline_keyboard, create_one
+from my_keyboards.__init__ import create_inline_keyboard, create_one, create_reply
 from states.states import AlSettings
 from aiogram.exceptions import TelegramBadRequest
 import random
-from database.inserts import insert_settings
+from database.inserts import insert_settings, insert_adv
+from utils.utils import advertisement
+import datetime
 
 
 router_search = Router()
 
 """Глобальные переменные кнопок для удобства внесения изменений"""
-keyboard_back = create_one(texts.back)
-keyboard_district = create_inline_keyboard(width=2, buttons_dict=texts.district_choose_inline, button_back=None)
+keyboard_back = create_one(button_one=texts.back, button_back=None)
+keyboard_district = create_inline_keyboard(width=2, buttons_dict=texts.district_choose_inline, button_back=texts.back)
 keyboard_rooms = create_inline_keyboard(width=3, buttons_dict=texts.rooms_inline, button_back=texts.back)
+keyboards_swipe = create_reply(width=1, buttons_dict=texts.swipe)
 
 
 """Словарь для параметров поиска и внесения настроек в базу данных"""
@@ -23,7 +26,7 @@ user_dict: dict[int, dict[str]] = {}
 
 
 @router_search.callback_query(StateFilter(AlSettings.min_price), F.data == '/back')
-@router_search.callback_query(StateFilter(AlSettings.start), F.data == '/start_s_a')
+@router_search.callback_query(StateFilter(AlSettings.start, AlSettings.update), F.data == '/start_s_a')
 async def settings(callback: CallbackQuery, state: FSMContext):
     """Handler, срабатывающий на кнопку "Задать параметры поиска", перенаправляющий на выбор района города"""
     #добавить условие: если есть в базе - очистить избранное?
@@ -128,12 +131,12 @@ async def high_filter(message: Message, state: FSMContext):
         await state.set_state(AlSettings.max_price)
 
 
-@router_search.message(StateFilter(AlSettings.swipe))
+@router_search.message(StateFilter(AlSettings.amount_rooms))
 async def no_write_pls_choice_rooms(message: Message, state: FSMContext):
     """Handler, срабатывающий при попытке ввести текст, вместо выбора количества комнат.
     Без сохранения результатов верхней границы (уже сохранено)"""
     await message.answer('Нажми кнопку д####еб', reply_markup=keyboard_rooms)
-    await state.set_state(AlSettings.amount_rooms)
+    await state.set_state(AlSettings.swipe)
 
 
 @router_search.callback_query(StateFilter(AlSettings.amount_rooms), F.data.in_(texts.rooms_inline))
@@ -143,14 +146,47 @@ async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
     await state.update_data(rooms=rooms_const)
     await callback.message.delete()
     user_dict[callback.from_user.id] = await state.get_data()
-    await callback.message.answer(f"Район города: {user_dict[callback.from_user.id]['district']}\n"
-                                  f"Ценовой диапазон: {user_dict[callback.from_user.id]['low']}"
-                                  f"-{user_dict[callback.from_user.id]['high']}\n"
-                                  f"Количество комнат: {user_dict[callback.from_user.id]['rooms']}")
-    await insert_settings(callback.from_user.id, user_dict[callback.from_user.id]['district'], user_dict[callback.from_user.id]['rooms'],
-                          user_dict[callback.from_user.id]['low'], user_dict[callback.from_user.id]['high'])
-    await state.set_state(AlSettings.swipe)
+    await callback.message.answer(
+                                  f"Район города: {user_dict[callback.from_user.id]['district']}\n"
+                                       f"Ценовой диапазон: {user_dict[callback.from_user.id]['low']}"
+                                       f"-{user_dict[callback.from_user.id]['high']}\n"
+                                       f"Количество комнат: {user_dict[callback.from_user.id]['rooms']}",
+                                       reply_markup=keyboards_swipe
+                                  )
+    await insert_settings(
+                          callback.from_user.id,
+                          user_dict[callback.from_user.id]["district"],
+                          user_dict[callback.from_user.id]["rooms"],
+                          user_dict[callback.from_user.id]["low"],
+                          user_dict[callback.from_user.id]["high"]
+                          )
 
-@router_search.callback_query(StateFilter(AlSettings.swipe))
-async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
-    pass
+    adv_dict = await advertisement(
+                        callback.from_user.id,
+                        user_dict[callback.from_user.id]["district"],
+                        user_dict[callback.from_user.id]["low"],
+                        user_dict[callback.from_user.id]["high"],
+                        user_dict[callback.from_user.id]["rooms"]
+                        )
+    #print(adv_dict)
+    for key, value in adv_dict.items():
+        await insert_adv(
+                        adv_id=key,
+                        date_adv=datetime.datetime.strptime(value['time'], '%Y-%m-%d %H:%M:%S').date(),
+                        metro=user_dict[callback.from_user.id]["district"],
+                        rooms= user_dict[callback.from_user.id]["rooms"],
+                        floor=value["Этаж"],
+                        price=value["price"],
+                        square=value["Общая площадь"],
+                        repair=value["Ремонт"],
+                        furniture=value["Мебель"],
+                        description=value["description"],
+                        address=value["address"],
+                        phone=value['phone'],
+                        image_1=value["images"][0],
+                        image_2=value["images"][1],
+                        image_3=value["images"][2],
+                        url=value['url']
+                        )
+
+    await state.set_state(AlSettings.swipe)

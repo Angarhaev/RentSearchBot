@@ -1,19 +1,14 @@
 from aiogram.types import KeyboardButton
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 
-def create_key(width: int, *args: str, **kwargs: str):
+def create_reply(width: int, buttons_dict:  dict[str, int: str, int]):
     """Создание произвольного количества кнопок"""
     settings: ReplyKeyboardBuilder = ReplyKeyboardBuilder()
 
     buttons: list[KeyboardButton] = []
 
-    if args:
-        for button in args:
-            buttons.append(KeyboardButton(text=button))
-
-    if kwargs:
-        for key, button in kwargs.items():
-            buttons.append(KeyboardButton(text=button))
+    for key, button in buttons_dict.items():
+        buttons.append(KeyboardButton(text=button, callback_data=key))
 
     settings.row(*buttons, width=width)
     return settings.as_markup()

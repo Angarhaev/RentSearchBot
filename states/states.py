@@ -11,10 +11,10 @@ class AlSettings(StatesGroup):
     amount_rooms = State()
     swipe = State()
 
-    apartment = State()
-    area_min = State()
-    are_max = State()
-    floor = State()
-    furniture = State()
-
+    update = State()
+    update_min = State()
+    update_max = State()
+    update_disrict = State()
+    update_rooms = State()
+    update_finish = State()
 

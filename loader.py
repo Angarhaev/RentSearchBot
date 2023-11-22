@@ -3,8 +3,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.enums.parse_mode import ParseMode
 from config_data import config
-from handlers.start_handlers import router
-from handlers.search_settings import router_search
+from handlers import router, router_settings, router_search
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from utils.time_message import send_adv
 from datetime import datetime
@@ -35,6 +34,7 @@ async def load() -> None:
 
     """Регистрируем хэндлеры"""
     dp.include_router(router)
+    dp.include_router(router_settings)
     dp.include_router(router_search)
 
     """Игнорирование старых сообщений"""

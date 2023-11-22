@@ -2,16 +2,22 @@ from aiogram.types import InlineKeyboardButton
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
-def create_one(button_one: dict[str, int: str, int]):
-    """Функция для создания одинокой произвольной кнопки"""
-    back_button_keyboard: InlineKeyboardBuilder = InlineKeyboardBuilder()
+def create_one(button_one: dict[str, int: str, int], button_back: dict[str, int: str, int] = None, width: int = 1):
+    """Функция для создания одинокой произвольной кнопки с возможностью наличия
+    кнопки "Назад" при явном указании"""
+    one_button_keyboard: InlineKeyboardBuilder = InlineKeyboardBuilder()
     buttons: list[InlineKeyboardButton] = []
 
     for key, button in button_one.items():
         buttons.append(InlineKeyboardButton(text=button, callback_data=key))
 
-    back_button_keyboard.row(*buttons, width=1)
-    return back_button_keyboard.as_markup()
+    one_button_keyboard.row(*buttons, width=width)
+
+    kb_button_back = button_back_add(button_back)
+    if kb_button_back:
+        one_button_keyboard.row(kb_button_back, width=width)
+
+    return one_button_keyboard.as_markup()
 
 
 def button_back_add(button_back: dict[str, int: str, int]):
