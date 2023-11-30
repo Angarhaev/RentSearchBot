@@ -3,22 +3,22 @@ from aiogram.types import Message, CallbackQuery
 from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 from utils import texts
-from my_keyboards.__init__ import create_inline_keyboard, create_one, create_reply
+from utils.utils import ApiInteraction
+from my_keyboards import create_inline_keyboard, create_one
 from states.states import AlSettings
 from aiogram.exceptions import TelegramBadRequest
 import random
-from database.inserts import insert_settings, insert_adv
-from utils.utils import advertisement
+from database import Requests
 import datetime
 
-
+"""Инициализация роутера для работы с хэндлерами настроек поиска"""
 router_search = Router()
 
 """Глобальные переменные кнопок для удобства внесения изменений"""
 keyboard_back = create_one(button_one=texts.back, button_back=None)
 keyboard_district = create_inline_keyboard(width=2, buttons_dict=texts.district_choose_inline, button_back=texts.back)
 keyboard_rooms = create_inline_keyboard(width=3, buttons_dict=texts.rooms_inline, button_back=texts.back)
-keyboards_swipe = create_reply(width=1, buttons_dict=texts.swipe)
+keyboards_swipe = create_inline_keyboard(width=1, buttons_dict=texts.swipe)
 
 
 """Словарь для параметров поиска и внесения настроек в базу данных"""
@@ -29,7 +29,6 @@ user_dict: dict[int, dict[str]] = {}
 @router_search.callback_query(StateFilter(AlSettings.start, AlSettings.update), F.data == '/start_s_a')
 async def settings(callback: CallbackQuery, state: FSMContext):
     """Handler, срабатывающий на кнопку "Задать параметры поиска", перенаправляющий на выбор района города"""
-    #добавить условие: если есть в базе - очистить избранное?
     num_lets_go = random.randint(1, 7)
     await callback.message.delete()
     await callback.message.answer(texts.text_for_not_start[num_lets_go])
@@ -54,6 +53,8 @@ async def districts(callback: CallbackQuery, state: FSMContext):
     district_const = texts.district_choose_inline[callback.data]
     await state.update_data(district=district_const)
     await callback.message.delete()
+    await callback.bot.send_sticker(chat_id=callback.message.chat.id,
+                                    sticker='CAACAgIAAxkBAAEKz7VlYNhxT-aa5fm8AY7ALiAAAZwn3uUAAlinAAJji0YMwxSGg7Sx8SEzBA')
     await callback.message.answer('Укажите нижнюю границу цены:', reply_markup=keyboard_back)
     await state.set_state(AlSettings.min_price)
 
@@ -66,7 +67,7 @@ async def districts_without_update_dict(callback: CallbackQuery, state: FSMConte
     await state.set_state(AlSettings.min_price)
 
 
-@router_search.message(StateFilter(AlSettings.min_price),  F.text.isdigit(), lambda m: int(m.text) > 999)
+@router_search.message(StateFilter(AlSettings.min_price),  F.text.isdigit(), lambda m: 80000 > int(m.text) > 999)
 async def low(message: Message, state: FSMContext):
     """Handler для указания верхней границы поиска и обновлением словаря(добавление нижней границы)"""
     try:
@@ -98,6 +99,8 @@ async def low_filter(message: Message, state: FSMContext):
         for i in range(message.message_id, 0, -1):
             await message.bot.delete_message(message.from_user.id, i)
     except TelegramBadRequest:
+        await message.bot.send_sticker(chat_id=message.chat.id,
+                                       sticker='CAACAgIAAxkBAAEKz79lYNnjlF-eeTwDExOnBJta1VsnDQAChQEAAiteUwuroLLCvfR5lzME')
         await message.answer('Нижняя граница должна быть цифровым значением (без букв и пробелов) '
                              'и больше, чем 999. Например 1000', reply_markup=keyboard_back)
         await state.set_state(AlSettings.min_price)
@@ -112,6 +115,8 @@ async def high(message: Message, state: FSMContext):
         for i in range(message.message_id, 0, -1):
             await message.bot.delete_message(message.from_user.id, i)
     except TelegramBadRequest:
+        await message.bot.send_sticker(chat_id=message.chat.id,
+                                       sticker='CAACAgIAAxkBAAEKz8FlYNojVtqQblXhkWCm1pdbSBRQ7AACgwMAAm2wQgMpslbTaPw4PjME')
         await message.answer('Отлично! Сколько комнат должно быть в квартире?', reply_markup=keyboard_rooms)
         await state.update_data(high=message.text)
         await state.set_state(AlSettings.amount_rooms)
@@ -135,8 +140,8 @@ async def high_filter(message: Message, state: FSMContext):
 async def no_write_pls_choice_rooms(message: Message, state: FSMContext):
     """Handler, срабатывающий при попытке ввести текст, вместо выбора количества комнат.
     Без сохранения результатов верхней границы (уже сохранено)"""
-    await message.answer('Нажми кнопку д####еб', reply_markup=keyboard_rooms)
-    await state.set_state(AlSettings.swipe)
+    await message.answer('Выберите, пожалуйста, один из вариантов', reply_markup=keyboard_rooms)
+    await state.set_state(AlSettings.finish_start_settings)
 
 
 @router_search.callback_query(StateFilter(AlSettings.amount_rooms), F.data.in_(texts.rooms_inline))
@@ -146,35 +151,38 @@ async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
     await state.update_data(rooms=rooms_const)
     await callback.message.delete()
     user_dict[callback.from_user.id] = await state.get_data()
+    await callback.bot.send_sticker(chat_id=callback.message.chat.id,
+                                    sticker='CAACAgIAAxkBAAEKz8dlYNsaysIQWze8cq6qySHLAAH6tAgAAk6nAAJji0YME3DAzRA4pVkzBA')
     await callback.message.answer(
-                                  f"Район города: {user_dict[callback.from_user.id]['district']}\n"
-                                       f"Ценовой диапазон: {user_dict[callback.from_user.id]['low']}"
-                                       f"-{user_dict[callback.from_user.id]['high']}\n"
-                                       f"Количество комнат: {user_dict[callback.from_user.id]['rooms']}",
-                                       reply_markup=keyboards_swipe
+                                 f"Вы уже почти стали арендатором! Смотрим варианты?:\n"
+                                 f"Район города: {user_dict[callback.from_user.id]['district']}\n"
+                                 f"Ценовой диапазон: {user_dict[callback.from_user.id]['low']}"
+                                 f"-{user_dict[callback.from_user.id]['high']}\n"
+                                 f"Количество комнат: {user_dict[callback.from_user.id]['rooms']}",
+                                 reply_markup=keyboards_swipe
                                   )
-    await insert_settings(
-                          callback.from_user.id,
-                          user_dict[callback.from_user.id]["district"],
-                          user_dict[callback.from_user.id]["rooms"],
-                          user_dict[callback.from_user.id]["low"],
-                          user_dict[callback.from_user.id]["high"]
+    await Requests.insert_settings(
+                          tg_id=callback.from_user.id,
+                          district=user_dict[callback.from_user.id]["district"],
+                          rooms=user_dict[callback.from_user.id]["rooms"],
+                          low_price=user_dict[callback.from_user.id]["low"],
+                          high_price=user_dict[callback.from_user.id]["high"]
                           )
 
-    adv_dict = await advertisement(
+    adv_dict = await ApiInteraction.advertisement_request_api(
                         callback.from_user.id,
                         user_dict[callback.from_user.id]["district"],
                         user_dict[callback.from_user.id]["low"],
                         user_dict[callback.from_user.id]["high"],
                         user_dict[callback.from_user.id]["rooms"]
                         )
-    #print(adv_dict)
+
     for key, value in adv_dict.items():
-        await insert_adv(
+        await Requests.insert_advertisements(
                         adv_id=key,
                         date_adv=datetime.datetime.strptime(value['time'], '%Y-%m-%d %H:%M:%S').date(),
-                        metro=user_dict[callback.from_user.id]["district"],
-                        rooms= user_dict[callback.from_user.id]["rooms"],
+                        district=user_dict[callback.from_user.id]["district"],
+                        rooms=user_dict[callback.from_user.id]["rooms"],
                         floor=value["Этаж"],
                         price=value["price"],
                         square=value["Общая площадь"],
@@ -183,10 +191,8 @@ async def rooms_and_to_database(callback: CallbackQuery, state: FSMContext):
                         description=value["description"],
                         address=value["address"],
                         phone=value['phone'],
-                        image_1=value["images"][0],
-                        image_2=value["images"][1],
-                        image_3=value["images"][2],
+                        images=value['images'],
                         url=value['url']
                         )
 
-    await state.set_state(AlSettings.swipe)
+    await state.set_state(AlSettings.finish_start_settings)

@@ -9,12 +9,14 @@ class AlSettings(StatesGroup):
     max_price = State()
     max_price_2 = State()
     amount_rooms = State()
-    swipe = State()
+    finish_start_settings = State()
 
     update = State()
     update_min = State()
     update_max = State()
-    update_disrict = State()
+    update_district = State()
     update_rooms = State()
     update_finish = State()
+    user_settings = State()
+    adv_showed = State()
 

@@ -1,0 +1,1 @@
+from .easy_funcs import links_images

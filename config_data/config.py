@@ -10,12 +10,16 @@ else:
 BOT_TOKEN = os.getenv('BOT_TOKEN')
 
 """Параметры для соединения с базой данных"""
-db_host = os.getenv('DB_HOST')
-db_user_name = os.getenv('DB_USER_NAME')
-db_password = os.getenv('DB_PASSWORD')
-db_db_name = os.getenv('DB_NAME')
+DB_HOST = os.getenv('DB_HOST')
+DB_USERNAME = os.getenv('DB_USER_NAME')
+DB_PASSWORD = os.getenv('DB_PASSWORD')
+DB_NAME = os.getenv('DB_NAME')
+DB_PORT = os.getenv('DB_PORT')
 
 """Параметры для поиска квартиры"""
 API_KEY = os.getenv('API_KEY')
-url_api = os.getenv('URL_API')
-user_api = os.getenv('USER_API')
+API_URL = os.getenv('URL_API')
+API_USER = os.getenv('USER_API')
+
+
+SQL_ALCHEMY_URL = f"mysql+asyncmy://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
