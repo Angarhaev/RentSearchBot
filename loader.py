@@ -5,9 +5,8 @@ from aiogram.enums.parse_mode import ParseMode
 from config_data import config
 from handlers import router, router_settings, router_search, router_echo, router_run_mes
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from utils.time_message import send_adv
+from utils import ShedulerFunc
 from datetime import datetime
-#from database.create_tables import start_create_table
 from database import async_main
 
 storage = MemoryStorage()
@@ -23,15 +22,16 @@ async def load() -> None:
 
     """Инициализация базы данных"""
     await async_main()
-    #start_create_table()
 
     """Инициализация бота и диспетчера"""
     bot = Bot(token=config.BOT_TOKEN, parse_mode=ParseMode.HTML)
     dp = Dispatcher(storage=storage)
 
-    """Ежедневная автоматическая отправка варианта квартиры"""
+    """Автоматическая рассылка сообщений и обновление базы"""
     scheduler = AsyncIOScheduler(timezone="Asia/Irkutsk")
-    scheduler.add_job(send_adv, trigger='cron', hour=12, minute=0, start_date=datetime.now(), kwargs={'bot': bot})
+    scheduler.add_job(ShedulerFunc.sheduler_send_adv, trigger='cron', hour=12, minute=00, start_date=datetime.now(),
+                      kwargs={'bot': bot})
+    scheduler.add_job(ShedulerFunc.sheduler_update_base_adv, trigger='cron', hour=8, minute=0, start_date=datetime.now())
     scheduler.start()
 
     """Регистрируем хэндлеры"""

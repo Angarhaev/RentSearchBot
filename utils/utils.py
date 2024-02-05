@@ -1,84 +1,90 @@
 import requests
 import json
-from config_data.config import API_KEY, API_URL, API_USER
-from datetime import datetime, timedelta
+from config_data.config import API_URL
+from .utils_config import ApiConfig
+from . import EasyFunc
 
 
 url = API_URL
-apartments_dict: dict = {}
 
 
 class ApiInteraction:
+    def __init__(self):
+        self.apartments_dict: dict = {}
     """Клаcc для запросов и получения ответов от API"""
 
-    @staticmethod
-    async def recurs(data_adv: dict, tg_id: int, id_adv=None):
-        if 'id' in data_adv and data_adv['id'] not in apartments_dict[tg_id]:
+    async def recurs(self, data_adv: dict, id_adv=None):
+        """
+        Функция рекурсивного поиска для заполнения по json словарю с ответом от API
+        для записей полей таблицы Advertisements из базы данных
+        Params:
+        data_adv - словарь для рекурсивного поиска
+        tg_id - telegram_id пользователя
+        id_adv - уникальный id объявления
+        looking_keys - множество имен ключей для внесения значений в словарь для бд
+        Обратите внимание на ключ 'images'. Это список ключей со ссылками на фотографии квартир: т.к. они хранятся
+        списком словарей, где имя каждого ключа 'imgurl', а значение ссылка
+        """
+        if 'id' in data_adv and data_adv['id']:
             id_adv = data_adv['id']
-            apartments_dict[tg_id][id_adv] = {}
+            self.apartments_dict[id_adv] = {}
+
+        looking_keys = {'time', 'metro', 'url', 'description', 'Этаж', "техника", "Общая площадь",
+                        "Ремонт", "Количество комнат", "price", "address", "phone", "Мебель"}
 
         for key, value in data_adv.items():
             if isinstance(value, dict):
-                await ApiInteraction.recurs(value, tg_id, id_adv)
+                await self.recurs(data_adv=value, id_adv=id_adv)
             elif isinstance(value, list):
-                for list_elem in value:
-                    await ApiInteraction.recurs(list_elem, tg_id, id_adv)
+                for i in value:
+                    if isinstance(i, dict):
+                        await self.recurs(data_adv=i, id_adv=id_adv)
             else:
-                if key in {'time', 'metro', 'url', 'description', 'Этаж', "техника", "Общая площадь",
-                           "Ремонт", "Количество комнат", "price", "address", "phone", "Мебель", "images"}:
-                    apartments_dict[tg_id][id_adv][key] = value
-                # elif key == 'imgurl':
-                #     if 'images' in apartments_dict[tg_id][id_adv]:
-                #         apartments_dict[tg_id][id_adv]['images'].append(value)
-                #     else:
-                #         apartments_dict[tg_id][id_adv]['images'] = []
-                #         apartments_dict[tg_id][id_adv]['images'].append(value)
+                #print('check', key, value)
+                if id_adv is not None:
+                    if key in looking_keys:
+                        self.apartments_dict[id_adv][key] = value
+                    elif key == 'imgurl':
+                        if 'images' in self.apartments_dict[id_adv]:
+                            self.apartments_dict[id_adv]['images'] += f', {value}'
+                        else:
+                            self.apartments_dict[id_adv]['images'] = value
+
+    # @staticmethod
+    # async def advertisement_request_api(telegram_id, district, price_low, price_high, rooms):
+    #     """Метод для подключения к api cервису"""
+    #     params = ApiConfig.params_request(district=district, price_low=price_low,
+    #                                       price_high=price_high, rooms=rooms)
+    #     response = requests.get(url, params=params)
+    #
+    #     if response.status_code == 200:
+    #         json_data = json.loads(response.text)
+    #         #print(json_data)
+    #         apartments_dict[telegram_id] = {}
+    #         await ApiInteraction.recurs(json_data, telegram_id)
+    #     else:
+    #         print('Error:', response.status_code)
+    #         return None
+    #
+    #     filtered_dict = await EasyFunc.not_indicated(apartments_dict[telegram_id])
+    #
+    #     return filtered_dict
 
     @staticmethod
-    async def advertisement_request_api(telegram_id, metro, price_low, price_high, rooms):
-        params = {
-            'user': API_USER,
-            'token': API_KEY,
-            'metro': metro,
-            'category_id': 2,
-            'price1': price_low,
-            'price2': price_high,
-            'date1': datetime.now() - timedelta(days=30),
-            'date2': datetime.now(),
-            'city': 'Бурятия',
-            'param[2016]': 'На длительный срок',
-            'param[2019]': rooms,
-            'nedvigimost_type': 2,
-            'limit': 50,
-        }
-
+    async def all_advertisement_request_api():
+        """Метод запроса всех объявлений"""
+        params = ApiConfig.all_adv_request()
         response = requests.get(url, params=params)
 
         if response.status_code == 200:
             json_data = json.loads(response.text)
-            apartments_dict[telegram_id] = {}
-            await ApiInteraction.recurs(json_data, telegram_id)
             #print(json_data)
-
+            request_adv = ApiInteraction()
+            await request_adv.recurs(data_adv=json_data)
         else:
             print('Error:', response.status_code)
             return None
+        print(request_adv.apartments_dict)
+        filtered_dict = await EasyFunc.not_indicated(request_adv.apartments_dict)
 
-        params_to_db = {'time', 'metro', 'url', 'description', 'Этаж', "техника", "Общая площадь",
-                        "Ремонт", "Количество комнат", "price", "address", "phone", "Мебель", "images"}
-
-        for key, value in apartments_dict[telegram_id].items():
-            for i_param in params_to_db:
-                if i_param not in value:
-                    value[i_param] = 'Не указано'
-
-            # for i_key, i_value in value.items():
-            #     if i_key == 'images':
-            #         if len(value[i_key]) < 9:
-            #             for i in range(0, 9 - len(value[i_key])):
-            #                 value[i_key].append('Не указано')
-
-        return apartments_dict[telegram_id]
-
-# answer = advertisement(300844218, 'Советский', 10000, 25000, '1')
-# print(answer)
+        return filtered_dict

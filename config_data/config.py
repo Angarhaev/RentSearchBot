@@ -14,11 +14,11 @@ DB_HOST = os.getenv('DB_HOST')
 DB_USERNAME = os.getenv('DB_USER_NAME')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
 DB_NAME = os.getenv('DB_NAME')
-DB_PORT = os.getenv('DB_PORT')
+DB_PORT = '3306'
 
 """Параметры для поиска квартиры"""
 API_KEY = os.getenv('API_KEY')
-API_URL = os.getenv('URL_API')
+API_URL = 'https://ads-api.ru/main/api'
 API_USER = os.getenv('USER_API')
 
 

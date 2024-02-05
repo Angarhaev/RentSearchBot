@@ -32,7 +32,7 @@ class Users(AbstractBase):
 class SearchSetting(AbstractBase):
     """Класс для создания таблицы хранения поисковых настроек каждого пользователя"""
     id: Mapped[int] = mapped_column(primary_key=True)
-    telegram_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('users.telegram_id'), unique=True)
+    telegram_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('users.telegram_id', ondelete='CASCADE'), unique=True)
     district: Mapped[str] = mapped_column(VARCHAR(30))
     rooms: Mapped[str] = mapped_column(VARCHAR(30))
     low_price: Mapped[int] = mapped_column(Integer)
@@ -42,8 +42,10 @@ class SearchSetting(AbstractBase):
 class ViewedAdv(AbstractBase):
     """Класс для создания таблицы просмотренных объявлений"""
     id: Mapped[int] = mapped_column(primary_key=True)
-    telegram_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('users.telegram_id'))
-    adv_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('advertisements.advertisements_id'))
+    telegram_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('users.telegram_id', ondelete='CASCADE'))
+    adv_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('advertisements.advertisements_id',
+                                                               ondelete='CASCADE', comment='id объявления'))
+    date_adv: Mapped[str] = mapped_column(DATETIME)
     UniqueConstraint(telegram_id, adv_id, name='viewed_tg_adv_key')
 
 

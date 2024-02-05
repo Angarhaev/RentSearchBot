@@ -19,4 +19,4 @@ class AlSettings(StatesGroup):
     update_finish = State()
     user_settings = State()
     adv_showed = State()
-
+    adv_showed_photos = State()
