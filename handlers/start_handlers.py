@@ -12,7 +12,7 @@ from database import DatabaseCommands
 router = Router()
 
 
-@router.message(StateFilter(None), CommandStart)
+@router.message(StateFilter(None), F.text != '/edit_settings', F.text != "🏠", F.text != "/swipe", CommandStart)
 async def start_handler(message: Message, state: FSMContext):
     """Стартовый handler с внесением в базу данных пользователя, нажавшего старт"""
     user_keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
@@ -35,6 +35,7 @@ async def start_handler(message: Message, state: FSMContext):
 @router.callback_query(StateFilter(AlSettings.metro, AlSettings.settings,
                                    AlSettings.update, AlSettings.start), F.data == '/back', CommandStart)
 async def start_settings(callback: CallbackQuery, state: FSMContext):
+    """Хэндлер для отлавливания колбэков при нажатии кнопки back из стартовых меню прочих модулей"""
     user_keyboard_start = await KeyboardsStartCreate.create_start_search()
     user_keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
 
@@ -55,25 +56,22 @@ async def start_settings(callback: CallbackQuery, state: FSMContext):
                                           reply_markup=user_keyboard_start)
     await state.set_state(AlSettings.start)
 
-#
-# @router.message(StateFilter(AlSettings.start))
-# async def error_start(message: Message, state: FSMContext):
-#     user_keyboard_start = await KeyboardsStartCreate.create_start_search()
-#     user_keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
-#     try:
-#         for i in range(message.message_id, 0, -1):
-#             await message.bot.delete_message(message.from_user.id, i)
-#     except TelegramBadRequest:
-#         entry_insert_or_no = await DatabaseCommands.insert_user_start(message.from_user.id, message.from_user.username,
-#                                                                       message.from_user.full_name)
-#         if entry_insert_or_no:
-#             await message.bot.send_sticker(chat_id=message.chat.id,
-#                                            sticker='CAACAgIAAxkBAAEKz7NlYNfpIrodmS_oSyG4xxFIa-34zgACVQADr8ZRGmTn_PAl6RC_MwQ')
-#             await message.answer(f'{message.from_user.first_name}, пора приступить к поиску квартиры!',
-#                                  reply_markup=user_keyboard_start)
-#
-#         else:
-#             await message.answer(f'{message.from_user.first_name}, нажмите на одну из кнопок',
-#                                  reply_markup=user_keyboard_repeat_start_search)
-#
-#         await state.set_state(AlSettings.start)
+
+@router.message(StateFilter(AlSettings.start), F.text != "🏠", F.text != "/swipe", F.text != '/edit_settings')
+async def error_start(message: Message, state: FSMContext):
+    """Хэндлер для отлавливания ввода с клавиатуры пользователя из стартового состояния"""
+    user_keyboard_start = await KeyboardsStartCreate.create_start_search()
+    user_keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
+    entry_insert_or_no = await DatabaseCommands.insert_user_start(message.from_user.id, message.from_user.username,
+                                                                  message.from_user.full_name)
+    if entry_insert_or_no:
+        await message.bot.send_sticker(chat_id=message.chat.id,
+                                       sticker='CAACAgIAAxkBAAEKz7NlYNfpIrodmS_oSyG4xxFIa-34zgACVQADr8ZRGmTn_PAl6RC_MwQ')
+        await message.answer(f'{message.from_user.first_name}, пора приступить к поиску квартиры!',
+                             reply_markup=user_keyboard_start)
+
+    else:
+        await message.answer(f'{message.from_user.first_name}, нажмите на одну из кнопок',
+                             reply_markup=user_keyboard_repeat_start_search)
+
+    await state.set_state(AlSettings.start)

@@ -11,8 +11,9 @@ from states.states import AlSettings
 router_run_mes = Router()
 
 
-@router_run_mes.message(F.text == "🏠")
+@router_run_mes.message(F.text == "🏠", F.text == "/swipe")
 async def lets_find(message: Message, state: FSMContext):
+    """Хэндлер для отправки сообщения с одним объявлением для пользователя при нажатии на reply кнопку с домиком"""
     await message.delete()
     keyboards_adv = await KeyboardRunCreate.keyboards_adv()
     keyboard_back = await KeyboardRunCreate.keyboard_back()
@@ -51,7 +52,7 @@ async def lets_find(message: Message, state: FSMContext):
 @router_run_mes.callback_query(StateFilter(AlSettings.update, AlSettings.finish_start_settings, AlSettings.start),
                                F.data == '/run')
 async def gimme_one_mes(callback: CallbackQuery, state: FSMContext):
-    """Функция для получения сообщения записи о непросмотренной квартире в личном сообщении от бота"""
+    """Хэндлер для отправки сообщения с объявлением при нажатии соответствующей кнопки"""
     keyboards_adv = await KeyboardRunCreate.keyboards_adv()
     keyboard_back = await KeyboardRunCreate.keyboard_back()
     await state.update_data(keyboards_adv=keyboards_adv)
@@ -84,7 +85,7 @@ async def gimme_one_mes(callback: CallbackQuery, state: FSMContext):
 
 @router_run_mes.callback_query(StateFilter(AlSettings.adv_showed), F.data == '/more')
 async def more_photo(callback: CallbackQuery, state: FSMContext):
-    """Функция для отправки дополнительных фотографий квартиры"""
+    """Хэндлер для отправки дополнительных фотографий квартиры"""
     keyboards_adv_more = await KeyboardRunCreate.keyboards_adv_more()
     get_dict = await state.get_data()
     media = get_dict['media']
@@ -101,12 +102,14 @@ async def more_photo(callback: CallbackQuery, state: FSMContext):
 
 @router_run_mes.callback_query(StateFilter(AlSettings.adv_showed, None), F.data == '/delete')
 async def delete_message(callback: CallbackQuery, state: FSMContext):
+    """Хэндлер для удаления сообщения с объявлением"""
     await callback.bot.delete_message(chat_id=callback.message.chat.id, message_id=callback.message.message_id)
     await state.set_state(AlSettings.adv_showed)
 
 
 @router_run_mes.callback_query(StateFilter(AlSettings.adv_showed_photos, None), F.data == '/delete')
 async def delete_message_media(callback: CallbackQuery, state: FSMContext):
+    """Хэндлер для удаления сообщения с дополнительными фотографиями"""
     await callback.bot.delete_message(chat_id=callback.message.chat.id, message_id=callback.message.message_id)
     get_dict = await state.get_data()
     media = get_dict['media']

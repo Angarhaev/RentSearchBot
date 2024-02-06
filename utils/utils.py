@@ -50,29 +50,10 @@ class ApiInteraction:
                         else:
                             self.apartments_dict[id_adv]['images'] = value
 
-    # @staticmethod
-    # async def advertisement_request_api(telegram_id, district, price_low, price_high, rooms):
-    #     """Метод для подключения к api cервису"""
-    #     params = ApiConfig.params_request(district=district, price_low=price_low,
-    #                                       price_high=price_high, rooms=rooms)
-    #     response = requests.get(url, params=params)
-    #
-    #     if response.status_code == 200:
-    #         json_data = json.loads(response.text)
-    #         #print(json_data)
-    #         apartments_dict[telegram_id] = {}
-    #         await ApiInteraction.recurs(json_data, telegram_id)
-    #     else:
-    #         print('Error:', response.status_code)
-    #         return None
-    #
-    #     filtered_dict = await EasyFunc.not_indicated(apartments_dict[telegram_id])
-    #
-    #     return filtered_dict
 
     @staticmethod
     async def all_advertisement_request_api():
-        """Метод запроса всех объявлений"""
+        """Метод запроса всех объявлений для обновления базы"""
         params = ApiConfig.all_adv_request()
         response = requests.get(url, params=params)
 

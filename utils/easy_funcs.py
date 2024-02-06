@@ -42,6 +42,7 @@ class EasyFunc:
 
     @staticmethod
     def custom_message_filter_search_settings_high():
+        """Кастомный фильтр для декорирования функции ввода значения с учетом другой границы поиска"""
         def decorator(func):
             async def wrapped(message: Message, state: FSMContext):
                 data = await state.get_data()
@@ -64,6 +65,7 @@ class EasyFunc:
 
     @staticmethod
     def custom_message_filter_edit_settings_low():
+        """Кастомный фильтр для декорирования функции ввода значения с учетом другой границы поиска"""
         def decorator(func):
             async def wrapped(message: Message, state: FSMContext):
                 data = await state.get_data()
@@ -91,6 +93,7 @@ class EasyFunc:
 
     @staticmethod
     def custom_message_filter_edit_settings_high():
+        """Кастомный фильтр для декорирования функции ввода значения с учетом другой границы поиска"""
         def decorator(func):
             async def wrapped(message: Message, state: FSMContext):
                 data = await state.get_data()

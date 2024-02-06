@@ -20,6 +20,7 @@ router_settings = Router()
                                      ),
                          F.text == '/edit_settings')
 async def edit_from_message(message: Message, state: FSMContext):
+    """Функция для редактирования параметров поиска"""
     keyboard_settings = await KeyboardEditCreate.create_settings()
     keyboard_start_search = await KeyboardEditCreate.create_start_search()
     keyboard_back = await KeyboardEditCreate.create_keyboard_back()
@@ -170,7 +171,7 @@ async def update_high_price(callback: CallbackQuery, state: FSMContext):
     await state.set_state(AlSettings.update_max)
 
 
-@router_settings.message(StateFilter(AlSettings.update_min), F.text.isdigit(),
+@router_settings.message(StateFilter(AlSettings.update_min), F.text != "🏠", F.text != "/swipe", F.text.isdigit(),
                          lambda m: 999 < int(m.text))
 @EasyFunc.custom_message_filter_edit_settings_low()
 async def update_finish_min(message: Message, state: FSMContext):
@@ -190,7 +191,7 @@ async def update_finish_min(message: Message, state: FSMContext):
             print('Ошибка:', exc)
 
 
-@router_settings.message(StateFilter(AlSettings.update_max), F.text.isdigit(),
+@router_settings.message(StateFilter(AlSettings.update_max), F.text != "🏠", F.text != "/swipe", F.text.isdigit(),
                          lambda m: int(m.text) < 100001)
 @EasyFunc.custom_message_filter_edit_settings_high()
 async def update_finish_max(message: Message, state: FSMContext):
@@ -210,7 +211,7 @@ async def update_finish_max(message: Message, state: FSMContext):
             print('Ошибка:', exc)
 
 
-@router_settings.message(StateFilter(AlSettings.update_min))
+@router_settings.message(StateFilter(AlSettings.update_min), F.text != "🏠", F.text != "/swipe")
 async def error_min_price(message: Message, state: FSMContext):
     """Функция для отлавливания некорректного ввода пользователя"""
     get_dict = await state.get_data()
@@ -228,7 +229,8 @@ async def error_min_price(message: Message, state: FSMContext):
         await state.set_state(AlSettings.update)
 
 
-@router_settings.message(StateFilter(AlSettings.update_max))
+@router_settings.message(StateFilter(AlSettings.update_max), F.text != "🏠", F.text != "/swipe",
+                         F.text != '/edit_settings')
 async def error_max_price(message: Message, state: FSMContext):
     """Функция для отлавливания некорректного ввода пользователя"""
     get_dict = await state.get_data()
@@ -246,7 +248,8 @@ async def error_max_price(message: Message, state: FSMContext):
         await state.set_state(AlSettings.update)
 
 
-@router_settings.message(StateFilter(AlSettings.update_district, AlSettings.update_rooms, AlSettings.update))
+@router_settings.message(StateFilter(AlSettings.update_district, AlSettings.update_rooms, AlSettings.update),
+                         F.text != "🏠", F.text != "/swipe", F.text != '/edit_settings')
 async def error_rooms_district(message: Message, state: FSMContext):
     """Функция для отлавливания некорректного ввода пользователя"""
     get_keyboards = await state.get_data()
