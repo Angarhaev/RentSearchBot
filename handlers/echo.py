@@ -12,9 +12,9 @@ from aiogram.exceptions import TelegramBadRequest
 router_echo = Router()
 
 
-@router_echo.message(StateFilter(None))
+@router_echo.message(StateFilter(None), F.text != "🏠", F.text != '/edit_settings', F.text != "/swipe")
 async def echo_mes(message: Message, state: FSMContext):
-    """Функция для ловли эхо и перенаправлении в начало"""
+    """Хэндлер для ловли эхо и перенаправлении в начало"""
     keyboard_start_search = await KeyboardsStartCreate.create_start_search()
     keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
     try:
@@ -34,6 +34,7 @@ async def echo_mes(message: Message, state: FSMContext):
 
 @router_echo.callback_query(StateFilter(None), F.data.in_(texts.all_buttons))
 async def echo_callback(callback: CallbackQuery, state: FSMContext):
+    """Хэндлер для ловли эхо и перенаправлении в начало"""
     keyboard_start_search = await KeyboardsStartCreate.create_start_search()
     keyboard_repeat_start_search = await KeyboardsStartCreate.create_repeat_start_search()
     await callback.message.delete()

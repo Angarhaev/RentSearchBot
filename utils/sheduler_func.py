@@ -9,7 +9,7 @@ class ShedulerFunc:
         """Метод автоматической рассылки сообщений для sheduler'a"""
 
         await bot.send_message(300844218, texts.time_adv['adv'])
-        # в chat_id номера чата из базы
+        # в chat_id номера чата из базы циклом по всем
 
     @staticmethod
     async def sheduler_update_base_adv():

@@ -69,6 +69,7 @@ class Advertisements(AbstractBase):
 
 
 async def async_main():
+    """Функция запуска соединения с базой данных"""
     async with engine.begin() as conn:
         await conn.run_sync(AbstractBase.metadata.create_all)
 
