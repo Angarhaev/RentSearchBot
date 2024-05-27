@@ -52,7 +52,7 @@ class ApiInteraction:
 
 
     @staticmethod
-    async def all_advertisement_request_api():
+    async def all_advertisement_request_api(self):
         """Метод запроса всех объявлений для обновления базы"""
         params = ApiConfig.all_adv_request()
         response = requests.get(url, params=params)
@@ -60,7 +60,7 @@ class ApiInteraction:
         if response.status_code == 200:
             json_data = json.loads(response.text)
             #print(json_data)
-            request_adv = ApiInteraction()
+            request_adv = self.apartments_dict
             await request_adv.recurs(data_adv=json_data)
         else:
             print('Error:', response.status_code)
